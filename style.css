@@ -1,9 +1,10 @@
 :root {
-    --dashboard-logo-section-height: 75px;
+    --dashboard-logo-section-height: 50px;
 }
 
 body > * {
     border: 1px solid #000;
+    padding: 1rem;
 }
 
 html, body {
@@ -40,11 +41,34 @@ li {
 .header-container {
     display: grid;
     grid-template-rows: var(--dashboard-logo-section-height) calc(175px - var(--dashboard-logo-section-height));
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr minmax(250px, 300px);
 }
 
 .user-hello {
     display: flex;
+    align-items: center;   
+}
+
+.user-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.user-info {
+    display: flex;
+    justify-content: end;
     align-items: center;
-    
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type=search] {
+    flex-grow: 1;
 }
