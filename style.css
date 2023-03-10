@@ -1,3 +1,7 @@
+:root {
+    --dashboard-logo-section-height: 75px;
+}
+
 body > * {
     border: 1px solid #000;
 }
@@ -19,7 +23,7 @@ body {
 .dashboard-container {
     grid-area: dashboard;
     display: grid;
-    grid-template-rows: 75px 1fr;
+    grid-template-rows: var(--dashboard-logo-section-height) 1fr;
 }
 
 ul {
@@ -33,3 +37,14 @@ li {
     padding: 4px 0px;
 }
 
+.header-container {
+    display: grid;
+    grid-template-rows: var(--dashboard-logo-section-height) calc(175px - var(--dashboard-logo-section-height));
+    grid-template-columns: 1fr 400px;
+}
+
+.user-hello {
+    display: flex;
+    align-items: center;
+    
+}
