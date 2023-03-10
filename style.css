@@ -103,7 +103,20 @@ input[type=search] {
 }
 
 .card {
-    height: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hide the scroll bar on the cards */
+.card-body {
+    flex-grow: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.card-body::-webkit-scrollbar {
+    display: none;
 }
 
 .announcements-container {
@@ -119,7 +132,7 @@ input[type=search] {
 .trending-container > .trending-div, .announcements-container > .announcents-div {
     flex-grow: 1;
     padding: 1rem;
-    margin-top: 0.5rem;
+    margin: 1rem 0px;
 }
 
 hr {
