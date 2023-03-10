@@ -88,6 +88,7 @@ input[type=search] {
     "projects announcements" 1fr
     "projects trending" 1fr
     / 1fr 300px;
+    gap: 2rem 1rem;
 }
 
 .projects-container {
@@ -103,4 +104,26 @@ input[type=search] {
 
 .card {
     height: 200px;
+}
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container > .trending-div, .announcements-container > .announcents-div {
+    flex-grow: 1;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+hr {
+    background-color: grey;
+    height: 1px;
+    border: none;
 }
