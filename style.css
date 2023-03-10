@@ -46,7 +46,8 @@ li {
 
 .user-hello {
     display: flex;
-    align-items: center;   
+    align-items: center; 
+    gap: 2rem;  
 }
 
 .user-buttons {
@@ -71,4 +72,12 @@ li {
 
 input[type=search] {
     flex-grow: 1;
+}
+
+.main-content-container {
+    display: grid;
+    grid-template: 
+    "projects announcements" 1fr
+    "projects trending" 1fr
+    / 1fr 300px;
 }
