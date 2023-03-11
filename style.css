@@ -1,5 +1,6 @@
 :root {
     --dashboard-logo-section-height: 50px;
+    --border-radius: 0.5rem;
 }
 
 body > * {
@@ -114,7 +115,7 @@ input[type=search] {
     display: flex;
     flex-direction: column;
     transition: 0.3s;
-    padding: 2.5rem 0px;
+    padding: 1.5rem 0px;
 }
 .card:hover {
     scale: 1.01;
@@ -138,17 +139,22 @@ input[type=search] {
     gap: 1rem;
     padding-right: 1rem;
 }
+
 .announcements-container {
     display: flex;
     flex-direction: column;
 }
+
+.announcements-div, .trending-div-container, .card {
+    border-radius: var(--border-radius);
+} 
 
 .trending-container {
     display: flex;
     flex-direction: column;
 }
 
-.trending-container > .trending-div, .announcements-container > .announcents-div {
+.trending-container > .trending-div, .announcements-container > .announcements-div {
     flex-grow: 1;
     padding: 1rem;
     margin: 1rem 0px;
@@ -160,12 +166,12 @@ hr {
     border: none;
 }
 
-.trending-div-container {
+/* .trending-div-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-}
+} */
 
 .trending-div {
     display: flex;
