@@ -8,36 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <div class="logo">Dashboard</div>
-        <div class="nav">
+    <nav class="dashboard-container">
+        <div class="logo"><img class="logo-icon" src="Icons/abacus.svg" alt="Dashboard"> Dashboard</div>
+        <div class="navigation">
             <ul class="nav1">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
+                <li><img class="icons" src="Icons/home-account.svg" alt="Home">Home</li>
+                <li><img class="icons" src="Icons/id-card.svg" alt="profile"> Profile</li>
+                <li><img class="icons" src="Icons/message-outline.svg" alt="Messages"> Messages</li>
+                <li><img class="icons" src="Icons/clock-time-nine-outline.svg" alt="History"> History</li>
+                <li><img class="icons" src="Icons/note-outline.svg" alt="Tasks"> Tasks</li>
+                <li><img class="icons" src="Icons/account-group-outline.svg" alt="Communities"> Communities</li>
+            </ul> 
             <ul class="nav2">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><img class="icons" src="Icons/cog-outline.svg" alt="Settings"> Settings</li>
+                <li><img class="icons" src="Icons/help-box.svg" alt="Support"> Support</li>
+                <li><img class="icons" src="Icons/shield-check-outline.svg" alt="Privacy"> Privacy</li>
             </ul>
         </div>
-    </div>
+    </nav>
     <div class="header-container">
         <div class="search-bar">
             <span>Search</span>
             <input type="search" id="search">
         </div>
         <div class="user-info">
-            <span>Icon</span>
-            <span>Icon</span>
+            <img src="Icons/bell-ring-outline.svg" alt="Notifications" class="icons">
+            <div class="circle-small dinosaur">
+                <img src="./Icons/icons8-kawaii-dinosaur-96.png" alt="Kawaii-dinosaur">
+            </div>
             <span id="username">Kurt Russell</span>
         </div>
         <div class="user-hello">
-            <div>Image</div>
+            <div class="circle dinosaur">
+                <img src="./Icons/icons8-kawaii-dinosaur-96.png" alt="Kawaii-dinosaur">
+            </div>
             <div><span>Hi there,</span><br><div id="user-tag">Kurt Russell (@kurt)</div></div>
         </div>
         <div class="user-buttons">
@@ -48,47 +52,84 @@
     </div>
     <div class="main-content-container">
         <div class="projects-container">
-            <p>Your Projects</p>
+            <h3>Your Projects</h3>
             <div class="cards-container">
                 <div class="card">
-                    <div class="card-header">Super Cool Project</div>
+                    <h3 class="card-header">Super Cool Project</h3>
                     <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta ab modi? Voluptatum nam, hic accusantium corporis corrupti in eveniet vitae officiis, voluptates recusandae autem!
                     </div>
-                    <div class="card-footer">ICON ICON ICON</div>
+                    <div class="card-footer"><img class="icons" src="Icons/star-plus-outline.svg" alt="Favourite"><img class="icons" src="Icons/eye-plus-outline.svg" alt="Watch"><img class="icons" src="Icons/source-fork.svg" alt="Fork"></div>
                 </div>
                 <div class="card">
-                    <div class="card-header">Super Cool Project</div>
+                    <h3 class="card-header">Super Cool Project</h3>
                     <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta ab modi? Voluptatum nam, hic accusantium corporis corrupti in eveniet vitae officiis, voluptates recusandae autem!
                     </div>
-                    <div class="card-footer">ICON ICON ICON</div>
+                    <div class="card-footer"><img class="icons" src="Icons/star-plus-outline.svg" alt="Favourite"><img class="icons" src="Icons/eye-plus-outline.svg" alt="Watch"><img class="icons" src="Icons/source-fork.svg" alt="Fork"></div>
                 </div>
                 <div class="card">
-                    <div class="card-header">Super Cool Project</div>
+                    <h3 class="card-header">Super Cool Project</h3>
                     <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta ab modi? Voluptatum nam, hic accusantium corporis corrupti in eveniet vitae officiis, voluptates recusandae autem!
                     </div>
-                    <div class="card-footer">ICON ICON ICON</div>
+                    <div class="card-footer"><img class="icons" src="Icons/star-plus-outline.svg" alt="Favourite"><img class="icons" src="Icons/eye-plus-outline.svg" alt="Watch"><img class="icons" src="Icons/source-fork.svg" alt="Fork"></div>
                 </div>
                 <div class="card">
-                    <div class="card-header">Super Cool Project</div>
+                    <h3 class="card-header">Super Cool Project</h3>
                     <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta ab modi? Voluptatum nam, hic accusantium corporis corrupti in eveniet vitae officiis, voluptates recusandae autem!
                     </div>
-                    <div class="card-footer">ICON ICON ICON</div>
+                    <div class="card-footer"><img class="icons" src="Icons/star-plus-outline.svg" alt="Favourite"><img class="icons" src="Icons/eye-plus-outline.svg" alt="Watch"><img class="icons" src="Icons/source-fork.svg" alt="Fork"></div>
                 </div>
 
             </div>
         </div>
         <div class="announcements-container">
-            <p>Announcements</p>
+            <h3>Announcements</h3>
             <div class="announcents-div">
-                <p>Annc1</p>
+                <div>
+                    <h4>Announcement 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eligendi voluptates praesentium consectetur architecto reiciendis impedit temporibus eos animi maxime!</p>
+                </div>
                 <hr>
-                <p>Ann2</p>
+                <div>
+                    <h4>Announcement 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus recusandae at explicabo veniam ad commodi voluptate, necessitatibus asperiores neque!</p>
+                </div>
+                <hr>
+                <div>
+                    <h4>Announcement 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus recusandae at explicabo veniam ad commodi voluptate, necessitatibus asperiores neque!</p>
+                </div>
             </div>
         </div>
         <div class="trending-container">
-            <p>Trending</p>
-            <div class="trending-div"></div>
+            <h3>Trending</h3>
+            <div class="trending-div-container">
+                <div class="trending-div">
+                    <div class="circle aquarium"><img src="/Icons/icons8-aquarium-96.png" alt="Aquarium"></div>
+                    <div class="user">
+                        <span>@username</span><br><span>World Peace Builder</span>
+                    </div>
+                </div>
+                <div class="trending-div">
+                    <div class="circle bear"><img src="/Icons/icons8-bear-96.png" alt="Bear"></div>
+                    <div class="user">
+                        <span>@username</span><br><span>World Peace Builder</span>
+                    </div>
+                </div>
+                <div class="trending-div">
+                    <div class="circle bee"><img src="/Icons/icons8-bee-top-view-96.png" alt="bee"></div>
+                    <div class="user">
+                        <span>@username</span><br><span>World Peace Builder</span>
+                    </div>
+                </div>
+                <div class="trending-div">
+                    <div class="circle shiba"><img src="Icons/icons8-shiba-inu-96.png" alt="Shiba"></div>
+                    <div class="user">
+                        <span>@username</span><br><span>World Peace Builder</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- icons by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 </body>
 </html>
