@@ -12,8 +12,8 @@ p {
     margin: 0px;
 }
 
-.main-content-container * {
-    border: 1px solid #000;
+.main-content-container {
+    background-color: #E2E8F0;
 }
 
 html, body {
@@ -112,6 +112,12 @@ input[type=search] {
     "projects trending" auto
     / 1fr 300px;
     gap: 2rem 1rem;
+    padding-top: 2rem;
+    padding-right: 3rem;
+}
+
+#your-projects {
+    padding-left: 2rem;
 }
 
 .projects-container {
@@ -121,16 +127,19 @@ input[type=search] {
 .projects-container > .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
 }
 
 .card {
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     transition: 0.3s;
-    padding: 1.5rem 0px;
+    padding: 1.5rem 1rem;
+    border: none;
+    border-left: 0.5rem solid orange;
 }
 .card:hover {
     scale: 1.01;
@@ -181,12 +190,10 @@ hr {
     border: none;
 }
 
-/* .trending-div-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-} */
+.trending-div-container {
+    padding: 1rem;
+    margin: 1rem 0px;
+}
 
 .trending-div {
     display: flex;
@@ -202,6 +209,7 @@ h4 {
 
 h3 {
     margin: 4px 0px;
+    font-size: 1.4rem;
 }
 
 .circle {
@@ -265,4 +273,9 @@ h3 {
 
 .logo-icon {
     width: 3rem;
+}
+
+.card, .announcements-div, .trending-div-container {
+    background-color: white;
+    box-shadow: 11px 11px 44px -16px rgba(0,0,0,0.75);
 }
