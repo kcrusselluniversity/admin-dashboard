@@ -19,6 +19,8 @@ p {
 html, body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 body {
@@ -31,15 +33,20 @@ body {
 }
 
 .dashboard-container {
+    background-color: #38bdf8;
     grid-area: dashboard;
     display: grid;
     grid-template-rows: var(--dashboard-logo-section-height) 1fr;
     padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
 }
 
-.navigation {
-    margin-top: 2rem;
+.navigation, .nav2 {
+    margin-top: 4rem;
 }
+
 ul {
     list-style-type: none;
     margin-bottom: 1rem;
@@ -48,10 +55,18 @@ ul {
 }
 
 li {
-    padding: 4px 0px;
+    padding: 0.5rem 0px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+li > *:hover {
+    cursor: pointer;
+}
+
+li > img {
+    padding-right: 1rem;
 }
 
 .header-container {
@@ -182,6 +197,7 @@ hr {
 
 h4 {
     margin: 2px;
+    font-weight: 500;
 }
 
 h3 {
@@ -231,7 +247,7 @@ h3 {
 }
 
 .icons {
-    width: 1.2rem;
+    width: 1.5rem;
 }
 
 .logo {
@@ -239,7 +255,14 @@ h3 {
     align-items: center;
     gap: 1rem;
     margin: 1rem 0px;
+    font-size: 2rem;
+    font-weight: 700;
 }
+
+.logo > *:hover {
+    cursor: pointer
+}
+
 .logo-icon {
-    width: 4rem;
+    width: 3rem;
 }
